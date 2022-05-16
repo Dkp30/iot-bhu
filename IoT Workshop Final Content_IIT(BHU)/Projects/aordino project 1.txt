@@ -1,0 +1,127 @@
+                                                       internet of things
+
+
+http://www.google.com/chrome/iot  for any website
+
+mac address:- 0x00,0xAA,0xBB,0xCC,0xDE,0x07 OR 00AABBCCDE07
+BLUETOOTH MODULE NO.:HC-05-07
+aurdino 
+1. turnig on the light
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13, OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(13, HIGH);
+
+}
+
+
+2.project: turning the light on for 2 sec
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13, OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(13, HIGH);
+  delay(2000);
+  digitalWrite(13, LOW);
+  delay(2000);
+  
+
+}
+
+                          3. project connect ir sensor to aurdion
+
+1.pin no. vcc to 5v.
+2. connect pin no. gnd to aurdino gnd
+3. connect output to pin 8 of aurdino
+
+
+                          USING IF CONDITION
+
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13, OUTPUT);
+  pinMode(8, INPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(8)==1)
+  {
+
+    digitalWrite(13, HIGH);
+    delay(10000);
+    digitalWrite(13, LOW);
+    
+  }
+  
+
+}
+
+
+4. print message project on aurdino
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  Serial.print("hello world");
+  
+
+}
+
+then open serial moniter
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  Serial.println("hello world");
+  Serial.print("this is my first serial program");
+  
+  
+
+}
+delay 
+
+
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  Serial.println("hello world");
+  Serial.println("this is my first serial program");
+  delay(2000);
+  
+  
+
+}
